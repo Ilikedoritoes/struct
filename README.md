@@ -10,10 +10,14 @@ struct Date //שם המבנה הוא
 	int day;
 	int month;
 	int year;
-};
+}
 
-void main()
-{
+typedef struct Date yes; // אפשר גם לכתוב
+                                //
+void main()                     //
+{                               //
+	yes d; // <----- ואז מקצרים את הפעולה ככה 
+
 	// d is just a name - could use anything
 	struct Date d; // הגדרת המשתנה מטיפוס המבנה
 	d.day = 6; 
